@@ -1,3 +1,6 @@
+# Note:
+*This repo is for my current Fall 2022 Web Development Class. Needs to be public and on personal github*
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
