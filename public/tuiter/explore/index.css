@@ -10,6 +10,7 @@
 }
 
 a#gear-icon {
+    margin-top: 12px;
     float: right;
     padding: 0px;
     font-size: 32px;
@@ -18,6 +19,7 @@ a#gear-icon {
 
 .wd-header-links {
     padding: 0px;
+    padding-top: 4px;
     padding-bottom: 16px;
     margin: 0px;
     margin-right: 16px;

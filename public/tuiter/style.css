@@ -51,33 +51,31 @@ div {
 .wd-header {
     padding-top: 12px;
     clear: both;
-    margin-bottom: 16px;
     border-bottom: 1px;
     border-top: 0px;
     border-left: 0px;
     border-right:0px;
     border-color: rgb(47,51,54);
     border-style: solid;
-    margin-bottom: 16px;
 }
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: rgb(110, 118, 125);
 }
 
 a:visited {
     text-decoration: none;
-    color: white;
+    color: rgb(110, 118, 125);
 }
 
 a:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(110, 118, 125);
 }
 
 a:active {
     text-decoration: none;
-    color: white;
+    color: rgb(110, 118, 125);
 }
 
