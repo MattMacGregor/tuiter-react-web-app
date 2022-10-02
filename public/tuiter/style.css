@@ -1,0 +1,83 @@
+body {
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: black;
+    border-width: 1px;
+    border-color: rgb(47,51,54);
+    border-style: solid;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body > div {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div {
+    overflow: hidden;
+}
+
+.wd-white-text {
+    color: white;
+}
+
+.wd-light-gray-text {
+    color: rgb(110, 118, 125);
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-dark-gray {
+    background-color: darkgrey;
+}
+
+.wd-topic {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-header {
+    padding-top: 12px;
+    clear: both;
+    margin-bottom: 16px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right:0px;
+    border-color: rgb(47,51,54);
+    border-style: solid;
+    margin-bottom: 16px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+

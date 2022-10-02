@@ -1,0 +1,90 @@
+#title-bookmarks {
+    font-size: 20px;
+    margin: 0px;
+}
+
+#title-user {
+    font-size: 13px;
+    color: lightgray;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.wd-avatar-div {
+    overflow: hidden;
+}
+
+.wd-avatar-image {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-bookmark-author {
+    padding-left: 12px;
+    font-size: 15px;
+    width: 506px;
+    color: white;
+}
+
+.wd-bookmark-content {
+    width: 504px;
+    color: white;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: rgb(47,51,54);
+    border-style: solid;
+}
+
+.wd-bookmark-text {
+    margin-bottom: 12px;
+}
+
+.wd-bookmark-image {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-color: rgb(47,51,54);
+}
+
+.wd-bookmark-title {
+    padding: 12px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.wd-bookmark-text {
+    padding: 12px;
+    margin: 0px;
+}
+
+#tuit-text {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.wd-glyphs {
+    margin: 0px;
+    margin-top: 12px;
+    clear: both;
+    color: white;
+}
+
+.wd-glyph-one {
+    width: 25%;
+    float: left;
+}
+
+.wd-glyphs-icon {
+    margin-right: 12px;
+}
+
+#heart-icon {
+    color: pink;
+}
