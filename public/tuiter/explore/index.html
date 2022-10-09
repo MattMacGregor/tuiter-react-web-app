@@ -7,23 +7,24 @@
     <div class="container mt-2">
         <div class="row">
             <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2" >
-                <ul class="list-group mb-2 float-start w-100">
-                    <li class="list-group-item fa-brands fa-twitter"></li>
-                    <li class="list-group-item"><i class="fa fa-home me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Home</span></li>
-                    <li class="list-group-item"><i class="fa fa-hashtag me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Explore</span></li>
-                    <li class="list-group-item"><i class="fa fa-bell me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Notifications</span></li>
-                    <li class="list-group-item"><i class="fa fa-bookmark me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Bookmarks</span></li>
-                    <li class="list-group-item"><i class="fa fa-list me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Lists</span></li>
-                    <li class="list-group-item"><i class="fa fa-user me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Profile</span></li>
-                    <li class="list-group-item ps-1">
-                        <span class="fa-stack fa-2xs ms-2">
+                <div class="list-group mb-2 float-start w-100 ">
+                    <a class="list-group-item fa-brands fa-twitter pt-3 pb-2"></a>
+                    <a class="list-group-item" href="home.html"><i class="fa fa-home pt-1 me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Home</span></a>
+                    <a class="list-group-item active" href="explore.html"><i class="fa fa-hashtag pt-1 me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Explore</span></a>
+                    <a class="list-group-item" href="notifications.html"><i class="fa fa-bell pt-1 me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Notifications</span></a>
+                    <a class="list-group-item" href="messages.html"><i class="fa fa-envelope pt-1 me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Messages</span></a>
+                    <a class="list-group-item" href="bookmarks.html"><i class="fa fa-bookmark pt-1 me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Bookmarks</span></a>
+                    <a class="list-group-item" href="lists.html"><i class="fa fa-list pt-1 me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Lists</span></a>
+                    <a class="list-group-item" href="profile.html"><i class="fa fa-user pt-1 me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Profile</span></a>
+                    <a class="list-group-item ps-1" href="more.html">
+                        <span class="fa-stack fa-2xs ms-2 mb-1">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-ellipsis fa-stack-1x fa-inverse"></i>
                         </span>
                         <span class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">
-                         More</span></li>
-                </ul>
-                <button class="btn bg-primary rounded-pill text-white fw-bold float-end w-100">Tuit</button>
+                         More</span></a>
+                </div>
+                <button class="btn bg-primary rounded-pill text-white fw-bold" id="tweetBtn">Tweet</button>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
                 <div class="row">
@@ -49,13 +50,13 @@
                     <li class="nav-item d-md-inline d-sm-none"><a class="nav-link" href="entertainment.html">Entertainment</a></li>
                 </ul>
                 <div class="container-fluid position-relative p-0">
-                    <img class="m-0 mt-1 img-fluid" src="../otis.jpg" />
-                    <span class="position-absolute start-0 bottom-0 ps-4 pb-1 fs-3 fw-bolder text-white">Otis Gettin Chunky</span>
+                    <img class="m-0 mt-1 img-fluid" src="../../images/starship.jpg" />
+                    <span class="position-absolute start-0 bottom-0 ps-2 pb-1 fs-3 fw-bolder text-white">SpaceX's Starship</span>
                 </div>
                 <div class="container">
                     <div class="row border border-2 border-top-0 p-1 align-items-center">
-                        <div class="col-9 p-1">
-                            <p class="gray mb-1">Web Development</p>
+                        <div class="col-10 p-2">
+                            <p class="gray m-0">Web Development</p>
                             <p class="fw-bold text-black m-0">
                                 ReactJS <i class="fa fa-check-circle"></i>
                                 <span class="gray fw-normal"> - 2h</span>
@@ -64,12 +65,12 @@
                                 React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
                             </p>
                         </div>
-                        <div class="col-3 p-0 pe-1">
+                        <div class="col-2 p-0 pe-1">
                             <img class="img-fluid rounded-4 float-end" src="../../images/reactjs_logo.png" />
                         </div>
                     </div>
                     <div class="row border border-2 border-top-0 p-1 align-items-center">
-                        <div class="col-9 p-1">
+                        <div class="col-10 p-2">
                             <p class="fw-bold text-black m-0">
                                 JavaScript <i class="fa fa-check-circle"></i>
                                 <span class="gray fw-normal"> - 2h</span>
@@ -81,12 +82,12 @@
                                 123K Tweets
                             </p>
                         </div>
-                        <div class="col-3 p-0 pe-1">
+                        <div class="col-2 p-0 pe-1">
                             <img class="img-fluid rounded-4 float-end" src="../../images/javascript_logo.png" />
                         </div>
                     </div>
                     <div class="row border border-2 border-top-0 p-1 align-items-center">
-                        <div class="col-9 p-1">
+                        <div class="col-10 p-2">
                             <p class="gray m-0">Web Development</p>
                             <p class="fw-bold text-black m-0">
                                 JQuery
@@ -95,13 +96,13 @@
                                 123K Tweets
                             </p>
                         </div>
-                        <div class="col-3 p-0 pe-1">
+                        <div class="col-2 p-0 pe-1">
                             <img class="img-fluid rounded-4 float-end" src="../../images/jquery_logo.png" />
                         </div>
                     </div>
                     <div class="row border border-2 border-top-0 p-1 align-items-center">
-                        <div class="col-9 p-1">
-                            <p class="gray mb-1">Web Development</p>
+                        <div class="col-10 p-2">
+                            <p class="gray mb-0">Web Development</p>
                             <p class="fw-bold text-black m-0">
                                 NodeJS <i class="fa fa-check-circle"></i>
                                 <span class="gray fw-normal"> - 2h</span>
@@ -110,7 +111,7 @@
                                 123K Tweets
                             </p>
                         </div>
-                        <div class="col-3 p-0 pe-1">
+                        <div class="col-2 p-0 pe-1">
                             <img class="img-fluid rounded-4 float-end" src="../../images/nodejs_logo.png" />
                         </div>
                     </div>
