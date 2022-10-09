@@ -1,79 +1,269 @@
 <head>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
-    <link href="../style.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="searchbar-div">
-        <input type="text" id="searchbar" class="wd-float-left wd-rounded-corners wd-dark-gray wd-white-text" placeholder="Search Tuiter" />
-        <a href="explore-settings.html" id="gear-icon"> 
-            &#9881;
-        </a>
-    </div>
-    <div class="wd-header wd-white-text">
-        <a id="for-you" class="wd-header-links wd-float-left" href="index.html">
-            For you
-        </a>
-        <a class="wd-header-links wd-float-left" href="index.html">
-            Trending
-        </a>
-        <a class="wd-header-links wd-float-left" href="index.html">
-            COVID-19
-        </a>
-        <a class="wd-header-links wd-float-left" href="index.html">
-            News
-        </a>
-        <a class="wd-header-links wd-float-left" href="index.html">
-            Sports
-        </a>
-        <a class="wd-header-links wd-float-left" href="index.html">
-            Entertainment
-        </a>
-    </div>
-    <div class="wd-suggested">
-        <div class="wd-suggested-post">
-            <p class="wd-topic"> Trending in Science</p>
-            <p class="wd-post-title wd-white-text">Starship</p>
-            <p class="wd-topic">55.5k Tuits</p>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2" >
+                <ul class="list-group mb-2 float-start w-100">
+                    <li class="list-group-item fa-brands fa-twitter"></li>
+                    <li class="list-group-item"><i class="fa fa-home me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Home</span></li>
+                    <li class="list-group-item"><i class="fa fa-hashtag me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Explore</span></li>
+                    <li class="list-group-item"><i class="fa fa-bell me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Notifications</span></li>
+                    <li class="list-group-item"><i class="fa fa-bookmark me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Bookmarks</span></li>
+                    <li class="list-group-item"><i class="fa fa-list me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Lists</span></li>
+                    <li class="list-group-item"><i class="fa fa-user me-2"></i><span class="d-xl-inline d-lg-none d-md-none d-sm-none"> Profile</span></li>
+                    <li class="list-group-item ps-1">
+                        <span class="fa-stack fa-2xs ms-2">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">
+                         More</span></li>
+                </ul>
+                <button class="btn bg-primary rounded-pill text-white fw-bold float-end w-100">Tuit</button>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                <div class="row">
+                    <div class="col-11">
+                        <div class="input-group rounded-pill border border-2">
+                            <span class="input-group-text bg-white rounded-pill border-0">
+                                <button class="btn border-0 fa fa-search ps-1 p-0"></button>
+                            </span>
+                            <input type="text" id="searchbar" class="form-control rounded-pill border-0" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="container-fluid col-1 position-relative">
+                        <button class="btn rounded-circle border-0 position-absolute translate-middle start-50 top-50">
+                            <i class="fa fa-gear fa-2x blue position-absolute translate-middle start-50 top-50"></i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs mt-1">
+                    <li class="nav-item"><a class="nav-link active" href="for-you.html">For you</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trending.html">Trending</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sports.html">Sports</a></li>
+                    <li class="nav-item d-md-inline d-sm-none"><a class="nav-link" href="entertainment.html">Entertainment</a></li>
+                </ul>
+                <div class="container-fluid position-relative p-0">
+                    <img class="m-0 mt-1 img-fluid" src="../otis.jpg" />
+                    <span class="position-absolute start-0 bottom-0 ps-4 pb-1 fs-3 fw-bolder text-white">Otis Gettin Chunky</span>
+                </div>
+                <div class="container">
+                    <div class="row border border-2 border-top-0 p-1 align-items-center">
+                        <div class="col-9 p-1">
+                            <p class="gray mb-1">Web Development</p>
+                            <p class="fw-bold text-black m-0">
+                                ReactJS <i class="fa fa-check-circle"></i>
+                                <span class="gray fw-normal"> - 2h</span>
+                            </p>
+                            <p class="fw-bold text-black m-0">
+                                React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
+                            </p>
+                        </div>
+                        <div class="col-3 p-0 pe-1">
+                            <img class="img-fluid rounded-4 float-end" src="../../images/reactjs_logo.png" />
+                        </div>
+                    </div>
+                    <div class="row border border-2 border-top-0 p-1 align-items-center">
+                        <div class="col-9 p-1">
+                            <p class="fw-bold text-black m-0">
+                                JavaScript <i class="fa fa-check-circle"></i>
+                                <span class="gray fw-normal"> - 2h</span>
+                            </p>
+                            <p class="fw-bold text-black m-0">
+                                JavaScript is programming language that can run on browsers as well as desktops
+                            </p>
+                            <p class="gray m-0">
+                                123K Tweets
+                            </p>
+                        </div>
+                        <div class="col-3 p-0 pe-1">
+                            <img class="img-fluid rounded-4 float-end" src="../../images/javascript_logo.png" />
+                        </div>
+                    </div>
+                    <div class="row border border-2 border-top-0 p-1 align-items-center">
+                        <div class="col-9 p-1">
+                            <p class="gray m-0">Web Development</p>
+                            <p class="fw-bold text-black m-0">
+                                JQuery
+                            </p>
+                            <p class="gray m-0">
+                                123K Tweets
+                            </p>
+                        </div>
+                        <div class="col-3 p-0 pe-1">
+                            <img class="img-fluid rounded-4 float-end" src="../../images/jquery_logo.png" />
+                        </div>
+                    </div>
+                    <div class="row border border-2 border-top-0 p-1 align-items-center">
+                        <div class="col-9 p-1">
+                            <p class="gray mb-1">Web Development</p>
+                            <p class="fw-bold text-black m-0">
+                                NodeJS <i class="fa fa-check-circle"></i>
+                                <span class="gray fw-normal"> - 2h</span>
+                            </p>
+                            <p class="gray m-0">
+                                123K Tweets
+                            </p>
+                        </div>
+                        <div class="col-3 p-0 pe-1">
+                            <img class="img-fluid rounded-4 float-end" src="../../images/nodejs_logo.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 d-lg-inline d-md-none d-sm-none">
+                <ul class="list-group">
+                    <li class="list-group-item fw-bold">Who to follow</li>
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 p-1">
+                                <img class="img-fluid img-square rounded-circle" src="../../images/java_logo.svg" />
+                            </div>
+                            <div class="col-xxl-6 col-xl-7 col-lg-7 p-1">
+                                <p class="fw-bold mb-1">Java <i class="fa fa-circle-check"></i></p>
+                                <p class="mb-0">@Java</p>
+                            </div>
+                            <div class="col-xxl-4 col-xl-3 col-lg-3">
+                                <button class="btn bg-primary rounded-pill text-white fw-bold float-end">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 p-1">
+                                <img class="img-fluid img-square rounded-circle" src="../../images/relativityspace.jpeg" />
+                            </div>
+                            <div class="col-xxl-6 col-xl-7 col-lg-7 p-1">
+                                <p class="fw-bold mb-1">Relativity Space <i class="fa fa-circle-check"></i></p>
+                                <p class="mb-0">@relativityspace</p>
+                            </div>
+                            <div class="col-xxl-4 col-xl-3 col-lg-3">
+                                <button class="btn bg-primary rounded-pill text-white fw-bold float-end">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 p-1">
+                                <img class="img-fluid img-square rounded-circle" src="../../images/virgin_logo.svg" />
+                            </div>
+                            <div class="col-xxl-6 col-xl-7 col-lg-7 p-1">
+                                <p class="fw-bold mb-1">Virgin Galatic <i class="fa fa-circle-check"></i></p>
+                                <p class="mb-0">@virgingalatic</p>
+                            </div>
+                            <div class="col-xxl-4 col-xl-3 col-lg-3">
+                                <button class="btn bg-primary rounded-pill text-white fw-bold float-end">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 p-1">
+                                <img class="img-fluid img-square rounded-circle" src="../../images/NASA_logo.svg.png" />
+                            </div>
+                            <div class="col-xxl-6 col-xl-7 col-lg-7 p-1">
+                                <p class="fw-bold mb-1">NASA <i class="fa fa-circle-check"></i></p>
+                                <p class="mb-0">@NASA</p>
+                            </div>
+                            <div class="col-xxl-4 col-xl-3 col-lg-3">
+                                <button class="btn bg-primary rounded-pill text-white fw-bold float-end">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 p-1">
+                                <img class="img-fluid img-square rounded-circle" src="../../images/tesla.jpg" />
+                            </div>
+                            <div class="col-xxl-6 col-xl-7 col-lg-7 p-1">
+                                <p class="fw-bold mb-1">Tesla <i class="fa fa-circle-check"></i></p>
+                                <p class="mb-0">@Tesla</p>
+                            </div>
+                            <div class="col-xxl-4 col-xl-3 col-lg-3">
+                                <button class="btn bg-primary rounded-pill text-white fw-bold float-end">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="wd-suggested-post">
-            <p class="wd-topic">Sports Trending</p>
-            <p class="wd-post-title wd-white-text">Joe Rogan</p>
-            <p class="wd-topic">5,218 Tuits</p>
-        </div> 
-    </div> 
-    <div class="wd-no-outline wd-suggested">
-        <div class="wd-suggested-post wd-float-left">
-            <p class="wd-author wd-white-text">The New York Times</p>
-            <p class="wd-post-title wd-white-text">BREAKING NEWS: Otis is a pretty cool bear! He is very ready for winter. Click here to find out how!</p>
-        </div>
-        <img class="wd-float-right wd-suggested-image" src="../otis.jpg" /> 
     </div>
-    <div class="wd-no-outline wd-suggested">
-        <div class="wd-suggested-post wd-float-left">
-            <p class="wd-author wd-white-text">LA Times</p>
-            <p class="wd-post-title wd-white-text">BREAKING NEWS: Tank is also a pretty cool bear! He is very ready for winter. Click here to find out how!</p>
-        </div>
-        <img class="wd-float-right wd-suggested-image" src="../tank.jpg" />
-    </div>
-    <div class="wd-no-outline wd-suggested">
-        <div class="wd-suggested-post wd-float-left">
-            <p class="wd-topic">Fat Bear Week News</p>
-            <p class="wd-post-title wd-white-text">BREAKING NEWS: Tank is also a pretty cool bear! He is very ready for winter. Click here to find out how!</p>
-        </div>
-        <img class="wd-float-right wd-suggested-image" src="../FatBearWeekBanner.jpg" />
-    </div>
-    <div class="wd-no-outline wd-suggested">
-        <div class="wd-suggested-post wd-float-left">
-            <p class="wd-topic">Non-Fat Bear Week News</p>
-            <p class="wd-post-title wd-white-text">Nothing else is happening.</p>
-        </div>
-        <img class="wd-float-right wd-suggested-image" src="../FatBearWeekBanner.jpg" />
-    </div>
-    <div class="wd-suggested">
-        <div class="wd-suggested-post">
-            <p class="wd-topic"> Trending in Bears</p>
-            <p class="wd-post-title wd-white-text">Bears</p>
-            <p class="wd-topic">55.5M Tuits</p>
-        </div>
-    </div>
+    <!--<div id="searchbar-div">-->
+        <!--<input type="text" id="searchbar" class="wd-float-left wd-rounded-corners wd-dark-gray wd-white-text" placeholder="Search Tuiter" />-->
+        <!--<a href="explore-settings.html" id="gear-icon"> -->
+            <!--&#9881;-->
+        <!--</a>-->
+    <!--</div>-->
+    <!--<div class="wd-header wd-white-text">-->
+        <!--<a id="for-you" class="wd-header-links wd-float-left" href="index.html">-->
+            <!--For you-->
+        <!--</a>-->
+        <!--<a class="wd-header-links wd-float-left" href="index.html">-->
+            <!--Trending-->
+        <!--</a>-->
+        <!--<a class="wd-header-links wd-float-left" href="index.html">-->
+            <!--COVID-19-->
+        <!--</a>-->
+        <!--<a class="wd-header-links wd-float-left" href="index.html">-->
+            <!--News-->
+        <!--</a>-->
+        <!--<a class="wd-header-links wd-float-left" href="index.html">-->
+            <!--Sports-->
+        <!--</a>-->
+        <!--<a class="wd-header-links wd-float-left" href="index.html">-->
+            <!--Entertainment-->
+        <!--</a>-->
+    <!--</div>-->
+    <!--<div class="wd-suggested">-->
+        <!--<div class="wd-suggested-post">-->
+            <!--<p class="wd-topic"> Trending in Science</p>-->
+            <!--<p class="wd-post-title wd-white-text">Starship</p>-->
+            <!--<p class="wd-topic">55.5k Tuits</p>-->
+        <!--</div>-->
+        <!--<div class="wd-suggested-post">-->
+            <!--<p class="wd-topic">Sports Trending</p>-->
+            <!--<p class="wd-post-title wd-white-text">Joe Rogan</p>-->
+            <!--<p class="wd-topic">5,218 Tuits</p>-->
+        <!--</div> -->
+    <!--</div> -->
+    <!--<div class="wd-no-outline wd-suggested">-->
+        <!--<div class="wd-suggested-post wd-float-left">-->
+            <!--<p class="wd-author wd-white-text">The New York Times</p>-->
+            <!--<p class="wd-post-title wd-white-text">BREAKING NEWS: Otis is a pretty cool bear! He is very ready for winter. Click here to find out how!</p>-->
+        <!--</div>-->
+        <!--<img class="wd-float-right wd-suggested-image" src="../otis.jpg" /> -->
+    <!--</div>-->
+    <!--<div class="wd-no-outline wd-suggested">-->
+        <!--<div class="wd-suggested-post wd-float-left">-->
+            <!--<p class="wd-author wd-white-text">LA Times</p>-->
+            <!--<p class="wd-post-title wd-white-text">BREAKING NEWS: Tank is also a pretty cool bear! He is very ready for winter. Click here to find out how!</p>-->
+        <!--</div>-->
+        <!--<img class="wd-float-right wd-suggested-image" src="../tank.jpg" />-->
+    <!--</div>-->
+    <!--<div class="wd-no-outline wd-suggested">-->
+        <!--<div class="wd-suggested-post wd-float-left">-->
+            <!--<p class="wd-topic">Fat Bear Week News</p>-->
+            <!--<p class="wd-post-title wd-white-text">BREAKING NEWS: Tank is also a pretty cool bear! He is very ready for winter. Click here to find out how!</p>-->
+        <!--</div>-->
+        <!--<img class="wd-float-right wd-suggested-image" src="../FatBearWeekBanner.jpg" />-->
+    <!--</div>-->
+    <!--<div class="wd-no-outline wd-suggested">-->
+        <!--<div class="wd-suggested-post wd-float-left">-->
+            <!--<p class="wd-topic">Non-Fat Bear Week News</p>-->
+            <!--<p class="wd-post-title wd-white-text">Nothing else is happening.</p>-->
+        <!--</div>-->
+        <!--<img class="wd-float-right wd-suggested-image" src="../FatBearWeekBanner.jpg" />-->
+    <!--</div>-->
+    <!--<div class="wd-suggested">-->
+        <!--<div class="wd-suggested-post">-->
+            <!--<p class="wd-topic"> Trending in Bears</p>-->
+            <!--<p class="wd-post-title wd-white-text">Bears</p>-->
+            <!--<p class="wd-topic">55.5M Tuits</p>-->
+        <!--</div>-->
+    <!--</div>-->
 </body>

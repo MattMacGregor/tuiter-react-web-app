@@ -1,94 +1,17 @@
-.wd-rounded-corners {
-    border-radius: 50px;
-}
-
 #searchbar {
-    padding: 8px;
-    width: 80%;
-    border: 0px;
-    margin-top:8px;
+    box-shadow: none;
 }
 
-a#gear-icon {
-    margin-top: 12px;
-    float: right;
-    padding: 0px;
-    font-size: 32px;
-    color: rgb(51,102,204);
+.blue {
+    color: #0c63e4;
 }
 
-.wd-header-links {
-    padding: 0px;
-    padding-top: 4px;
-    padding-bottom: 16px;
-    margin: 0px;
-    margin-right: 16px;
-    margin-left: 16px;
-    font-size: 15px;
-    color: rgb(110, 118, 125);
+
+.gray {
+    color: gray;
 }
 
-#for-you {
-    color: rgb(29,161,242);
-    border-style: solid;
-    border-left: none;
-    border-top: none;
-    border-right: none;
-}
-
-#searchbar-div {
-    clear: both;
-}
-
-#searchbar:focus {
-    outline: none;
-}
-
-.wd-float-done {
-    clear: both;
-}
-
-.wd-author {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 13px;
-}
-
-.wd-post-title {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.wd-suggested {
-    padding-left: 16px;
-    padding-right: 16px;
-    border-bottom: 0px;
-    border-top: 0px;
-    outline: 1px solid rgb(47,51,54);
-    clear:both;
-}
-
-.wd-no-outline {
-    outline: none;
-    border: 2px solid rgb(47,51,54);
-    border-left: 0px;
-    border-right: 0px;
-}
-
-.wd-suggested-post {
-    padding: 0px;
-    margin: 0px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    width: auto;
-}
-
-.wd-suggested-image {
-    border-radius:15px;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    width: 100px;
-    height: 100px;
+.img-square {
+    aspect-ratio: 1;
+    object-fit: cover;
 }
