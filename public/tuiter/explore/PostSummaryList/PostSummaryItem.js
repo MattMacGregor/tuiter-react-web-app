@@ -4,10 +4,10 @@ const PostSummaryItem = (post) => {
             <div class="row align-items-center">
                 <div class="col-10 p-2">
                     <p class="gray m-0">${post.topic}</p>
+                    <p class="fw-bold m-0">
                     ${
                         post.userName ?
-                        `<p class="fw-bold m-0">
-                            ${post.userName} <i class="fa fa-check-circle"></i><span class="gray fw-normal"> -</span>` : ''
+                        `${post.userName} <i class="fa fa-check-circle"></i><span class="gray fw-normal"> -</span>` : ''
                     }
                         <span class="gray fw-normal">${post.time}</span>
                     </p>
