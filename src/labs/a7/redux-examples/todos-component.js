@@ -15,12 +15,12 @@ const Todos = () => {
      dispatch(addTodo(todo))
    }
    const todoChangeHandler = (event) => {
-   const doValue = event.target.value;
-   const newTodo = {
-     do: doValue
-   };
-   setTodo(newTodo);
- }
+       const doValue = event.target.value;
+       const newTodo = {
+         do: doValue
+       };
+       setTodo(newTodo);
+   }
 
  return(
    <>
