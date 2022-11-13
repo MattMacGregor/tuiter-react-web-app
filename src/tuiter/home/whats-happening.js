@@ -2,6 +2,23 @@ import React, {useState} from "react";
 import {createTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
+const currentUser = {
+ "userName": "NASA",
+ "handle": "@nasa",
+ "image": "nasa.png",
+};
+
+const templateTuit = {
+ ...currentUser,
+ "topic": "Space",
+ "time": "2h",
+ "liked": false,
+ "disliked": false,
+ "replies": 0,
+ "retuits": 0,
+ "likes": 0,
+}
+
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');
  const dispatch = useDispatch();
@@ -9,7 +26,10 @@ const WhatsHappening = () => {
    const newTuit = {
      tuit: whatsHappening
    }
-   dispatch(createTuitThunk(newTuit)); 
+   dispatch(createTuitThunk({
+       ...templateTuit,
+       ...newTuit
+   })); 
  }
  return (
    <div className="row">

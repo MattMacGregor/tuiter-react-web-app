@@ -51,7 +51,6 @@ const tuitsSlice = createSlice({
       (state, { payload }) => {
         state.loading = false
         state.tuits.push({
-            ...templateTuit,
             ...payload
         })
     },
