@@ -20,7 +20,7 @@ export const deleteTuit = async (tid) => {
 }
 
 export const updateTuit = async (tuit) => {
-  const response = await axios.put(`${TUITS_API}/${tuit._id}`, tuit); // eslint-disable-line @javascript-eslint/no-unused-vars
+  const response = await axios.put(`${TUITS_API}/${tuit._id}`, tuit); // eslint-disable-line no-unused-vars
   return tuit;
 }
 
