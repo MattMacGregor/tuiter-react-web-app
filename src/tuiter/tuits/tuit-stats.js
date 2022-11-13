@@ -2,8 +2,8 @@ import React from "react"
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComment, faHeart as farHeart } from '@fortawesome/free-regular-svg-icons'
-import { faRepeat, faCodeBranch, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faComment, faHeart as farHeart, faThumbsDown as farThumbsDown } from '@fortawesome/free-regular-svg-icons'
+import { faRepeat, faCodeBranch, faHeart, faThumbsDown } from '@fortawesome/free-solid-svg-icons'
 import { updateTuitThunk } from "../../services/tuits-thunks.js";
 
 const TuitStats = ({ tuit }) => {
@@ -23,6 +23,14 @@ const TuitStats = ({ tuit }) => {
                         likes: tuit.likes + 1
                     }))
                 } ><FontAwesomeIcon color={tuit.liked ? "red" : undefined} icon={tuit.liked ? faHeart : farHeart} /> {tuit.likes} </Link> 
+            </li>
+            <li className="nav-item col">
+                <Link className="nav-link link-secondary" onClick={
+                    () => dispatch(updateTuitThunk({
+                        ...tuit,
+                        dislikes: tuit.dislikes + 1
+                    }))
+                } ><FontAwesomeIcon color={tuit.liked ? "blue" : undefined} icon={tuit.disliked ? faThumbsDown : farThumbsDown} /> {tuit.dislikes} </Link> 
             </li>
             <li className="nav-item col">
                 <Link className="nav-link link-secondary"><FontAwesomeIcon icon={faCodeBranch} /></Link>
