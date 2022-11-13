@@ -30,7 +30,7 @@ const TuitStats = ({ tuit }) => {
                         ...tuit,
                         dislikes: tuit.dislikes + 1
                     }))
-                } ><FontAwesomeIcon color={tuit.liked ? "blue" : undefined} icon={tuit.disliked ? faThumbsDown : farThumbsDown} /> {tuit.dislikes} </Link> 
+                } ><FontAwesomeIcon color={tuit.disliked ? "blue" : undefined} icon={tuit.disliked ? faThumbsDown : farThumbsDown} /> {tuit.dislikes} </Link> 
             </li>
             <li className="nav-item col">
                 <Link className="nav-link link-secondary"><FontAwesomeIcon icon={faCodeBranch} /></Link>
