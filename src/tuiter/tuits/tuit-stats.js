@@ -20,6 +20,7 @@ const TuitStats = ({ tuit }) => {
                 <Link className="nav-link link-secondary" onClick={
                     () => dispatch(updateTuitThunk({
                         ...tuit,
+                        liked: true,
                         likes: tuit.likes + 1
                     }))
                 } ><FontAwesomeIcon color={tuit.liked ? "red" : undefined} icon={tuit.liked ? faHeart : farHeart} /> {tuit.likes} </Link> 
@@ -28,6 +29,7 @@ const TuitStats = ({ tuit }) => {
                 <Link className="nav-link link-secondary" onClick={
                     () => dispatch(updateTuitThunk({
                         ...tuit,
+                        disliked: true,
                         dislikes: tuit.dislikes + 1
                     }))
                 } ><FontAwesomeIcon color={tuit.disliked ? "blue" : undefined} icon={tuit.disliked ? faThumbsDown : farThumbsDown} /> {tuit.dislikes} </Link> 
