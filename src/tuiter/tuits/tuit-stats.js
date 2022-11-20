@@ -21,7 +21,7 @@ const TuitStats = ({ tuit }) => {
                     () => dispatch(updateTuitThunk({
                         ...tuit,
                         liked: !tuit.liked,
-                        likes: tuit.likes + tuit.liked ? -1 : 1
+                        likes: tuit.likes + (tuit.liked ? -1 : 1)
                     }))
                 } ><FontAwesomeIcon color={tuit.liked ? "red" : undefined} icon={tuit.liked ? faHeart : farHeart} /> {tuit.likes} </Link> 
             </li>
@@ -30,7 +30,7 @@ const TuitStats = ({ tuit }) => {
                     () => dispatch(updateTuitThunk({
                         ...tuit,
                         disliked: !tuit.disliked,
-                        dislikes: tuit.dislikes + tuit.disliked ? -1 : 1
+                        dislikes: tuit.dislikes + (tuit.disliked ? -1 : 1)
                     }))
                 } ><FontAwesomeIcon color={tuit.disliked ? "blue" : undefined} icon={tuit.disliked ? faThumbsDown : farThumbsDown} /> {tuit.dislikes} </Link> 
             </li>
