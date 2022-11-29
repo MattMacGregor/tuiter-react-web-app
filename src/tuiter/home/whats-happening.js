@@ -17,6 +17,7 @@ const templateTuit = {
  "replies": 0,
  "retuits": 0,
  "likes": 0,
+ "dislikes": 0,
 }
 
 const WhatsHappening = () => {
@@ -24,7 +25,7 @@ const WhatsHappening = () => {
  const dispatch = useDispatch();
  const tuitClickHandler = () => {
    const newTuit = {
-     tuit: whatsHappening
+     "tuit": whatsHappening
    }
    dispatch(createTuitThunk({
        ...templateTuit,
